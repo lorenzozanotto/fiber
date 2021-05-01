@@ -90,8 +90,8 @@
 		ED169AC0263DAF3F00CC3B8C = {
 			isa = PBXGroup;
 			children = (
-				ED169ACC263DAF3F00CC3B8C /* Fiber */,
-				ED169AD7263DAF4000CC3B8C /* FiberTests */,
+				ED169AE4263DAF5A00CC3B8C /* Sources */,
+				ED704D17263DD1500034C4FE /* Tests */,
 				ED169B08263DB67300CC3B8C /* FiberDemo */,
 				ED169ACB263DAF3F00CC3B8C /* Products */,
 			);
@@ -107,16 +107,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED169ACC263DAF3F00CC3B8C /* Fiber */ = {
-			isa = PBXGroup;
-			children = (
-				ED169AE4263DAF5A00CC3B8C /* Sources */,
-				ED169ACD263DAF3F00CC3B8C /* Fiber.h */,
-				ED169ACE263DAF3F00CC3B8C /* Info.plist */,
-			);
-			path = Fiber;
-			sourceTree = "<group>";
-		};
 		ED169AD7263DAF4000CC3B8C /* FiberTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +120,7 @@
 		ED169AE4263DAF5A00CC3B8C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				ED169AE8263DB0D500CC3B8C /* Foundation */,
-				ED169AE5263DAF6500CC3B8C /* Fiber.swift */,
+				ED704D0F263DD0DD0034C4FE /* Fiber */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -209,6 +198,33 @@
 				ED169AE9263DB0E300CC3B8C /* FileFileWriter.swift */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		ED704D0F263DD0DD0034C4FE /* Fiber */ = {
+			isa = PBXGroup;
+			children = (
+				ED704D10263DD0E70034C4FE /* Library */,
+				ED169AE8263DB0D500CC3B8C /* Foundation */,
+			);
+			path = Fiber;
+			sourceTree = "<group>";
+		};
+		ED704D10263DD0E70034C4FE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				ED169ACE263DAF3F00CC3B8C /* Info.plist */,
+				ED169ACD263DAF3F00CC3B8C /* Fiber.h */,
+				ED169AE5263DAF6500CC3B8C /* Fiber.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		ED704D17263DD1500034C4FE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ED169AD7263DAF4000CC3B8C /* FiberTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,7 +561,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Fiber/Info.plist;
+				INFOPLIST_FILE = Sources/Fiber/Library/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,7 +587,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Fiber/Info.plist;
+				INFOPLIST_FILE = Sources/Fiber/Library/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

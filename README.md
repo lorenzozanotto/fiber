@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/0y5jIAo.jpg" alt="Fiber by Lorenzo Zanotto" height="400" />
+  <img src="https://i.imgur.com/Q3CRqid.png" alt="Fiber by Lorenzo Zanotto" height="400" />
 </p>
 
 [![Tests](https://github.com/lorenzozanotto/fiber/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/lorenzozanotto/fiber/actions/workflows/tests.yml)

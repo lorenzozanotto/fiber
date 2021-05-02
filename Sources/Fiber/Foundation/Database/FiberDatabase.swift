@@ -25,6 +25,6 @@ struct FiberDatabase: Database {
     }
 
     var isExisting: Bool {
-        ((try? path.checkPromisedItemIsReachable()) != nil)
+        (try? path.checkPromisedItemIsReachable()) != nil
     }
 }

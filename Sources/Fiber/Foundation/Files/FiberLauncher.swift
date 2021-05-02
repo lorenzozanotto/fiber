@@ -8,7 +8,6 @@
 import Foundation
 
 final class FiberLauncher {
-
     private let fileWriter: FiberFileWriter
 
     init(fileWriter: FiberFileWriter) {

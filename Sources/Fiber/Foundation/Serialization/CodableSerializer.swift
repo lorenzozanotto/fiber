@@ -8,7 +8,6 @@
 import Foundation
 
 struct CodableSerializer {
-
     static let `default` = CodableSerializer()
 
     func stringify<Model: Codable>(_ model: Model) -> String {
@@ -17,13 +16,12 @@ struct CodableSerializer {
         }
 
         guard let data = try? JSONSerialization.data(
-                withJSONObject: dictionary,
-                options: .prettyPrinted
+            withJSONObject: dictionary,
+            options: .prettyPrinted
         ) else {
             return .empty
         }
 
         return String(data: data, encoding: String.Encoding.utf8) ?? ""
     }
-
 }

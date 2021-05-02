@@ -12,7 +12,6 @@ protocol FiberFileWriter {
 }
 
 final class DefaultFileWriter {
-
     /// The Fiber database that is going to be used
     private let database: FiberDatabase
 
@@ -34,7 +33,6 @@ final class DefaultFileWriter {
 }
 
 extension DefaultFileWriter: FiberFileWriter {
-
     func bootstrap() {
         guard !database.isExisting else { return }
 

@@ -8,12 +8,11 @@
 import Foundation
 
 final class Fiber {
-
     /// An instance of the file writer
     private let fileWriter: FiberFileWriter
 
     init() {
-        self.fileWriter = DefaultFileWriter(
+        fileWriter = DefaultFileWriter(
             database: .default,
             serializer: .default,
             fileManager: .default

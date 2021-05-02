@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "Fiber",
     products: [
-        .library(name: "Fiber", targets: ["Fiber"]),
+        .library(name: "Fiber", targets: ["Fiber"])
     ],
     targets: [
         .target(
@@ -17,6 +17,6 @@ let package = Package(
             name: "FiberTests",
             dependencies: ["Fiber"],
             exclude: ["Info.plist"]
-            ),
+        )
     ]
 )

@@ -8,7 +8,6 @@
 import Foundation
 
 protocol Database {
-
     /// The location where the fiber file can be found
     var path: URL { get }
 
